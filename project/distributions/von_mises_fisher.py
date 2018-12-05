@@ -23,7 +23,6 @@ class VonMisesFisher(torch.distributions.Distribution):
         return self.scale
 
     def __init__(self, loc, scale, validate_args=None):
-        print('MEW INIT')
         self.dtype = loc.dtype
         self.loc = loc
         self.scale = scale
